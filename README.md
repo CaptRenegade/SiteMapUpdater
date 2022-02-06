@@ -1,8 +1,8 @@
 # SiteMapUpdater
-Windows System Service for updating web site sitemap '<lastmod>' timestamps automatically every 24 hours.
+Windows System Service for updating web site sitemap &lt;lastmod&gt; timestamps automatically every 24 hours.
 
 This is a utility I created because I couldn't find something like it on the internet.
-The Site Map Updater is used to update the '<lastmod>' time stamp on a web sites sitemap.xml file
+The Site Map Updater is used to update the &lt;lastmod&gt; time stamp on a web sites sitemap.xml file
 to show the site has recently been updated and is current.  Most web sites are not updated daily however
 search engines like to see that they are when nightly indexing occurs.  The most up-to-date web sites
 will be prioritized ahead of others as their content is shown to be the most recent as denoted by the
@@ -10,7 +10,7 @@ will be prioritized ahead of others as their content is shown to be the most rec
 
 I have included a sample_sitemap.xml file to display the formatting in which you sitemap file should be.
 The Site Map Updater works by reading the sitemap.xml file line by line and when it reaches the <url> blocks,
-creates a table for which it can isolate the various data fields (specifically the '<lastmod>' timestamp field)
+creates a table for which it can isolate the various data fields (specifically the &lt;lastmod&gt; timestamp field)
 and change it to a properly formatted current time then write to the new sitemap.xml file.  This is all done
 by creating a new temp file, writing everything to that temp file, then deleting the old sitemap.xml file,
 and finally renaming to the proper sitemap.xml.
